@@ -17,10 +17,6 @@
         padding-top: 20px;
         background-color: rgba(255, 255, 255, 0.815);
     }
-    .infoSecL{
-        width : 65%;
-        padding: 10px;
-    }
     .popStar{
         width: 70%;
         margin : 0px auto;
@@ -41,12 +37,13 @@
         padding-left: 5px;
         display:flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         box-shadow: -3px 4px 10px -8px rgba(0,0,0,0.52);
 -webkit-box-shadow: -4px 4px 10px -8px rgba(0,0,0,0.52);
 -moz-box-shadow: -4px 4px 10px -8px rgba(0,0,0,0.52);
 border-radius: 20px;
-        width: 34%;
+        width: 60rem;
+        margin-left: 5px;
     }
     .infoSecDetails   form{
         width: 90%;
@@ -55,7 +52,7 @@ border-radius: 20px;
     form input{
         background-color: rgba(218, 216, 216, 0.267);
         border-radius: 15px;
-        height: 40px;
+        height: 45px;
         padding-left: 14px;
         width: 100%;
         font-size: small;
@@ -65,7 +62,7 @@ border-radius: 20px;
         width: 49%;
     }
     form input[type="checkbox"] {
-    width: 12px;
+    width: 16px;
 }
     .cop{
         margin-top: -40px;
@@ -75,28 +72,16 @@ border-radius: 20px;
     .cop img{
         width: 100px;
     }
-    .spread{
-        display: flex;
-        gap: 1rem;
-        width: fit-content;
-        margin: 0px auto;
-    }
-    .all{
-        margin-top: 6px;
-        width: fit-content;
-    }
-    .spread img{
-        width: 60px;
-    }
+    
     .outercircle{
         background-color: white;
         border-radius: 100%;
         height: 90px;
         width: 90px;
         position: absolute;
-        left: 36%;
+        left: 80%;
         padding: 10px; 
-        top: -30px;
+        top: -100px;
     }
     .innercicle{
         background-color: red;
@@ -178,7 +163,7 @@ border-radius: 20px;
     animation: expandmode 2s 1s forwards; /* 2s duration, forwards to maintain end state */
 }
         .bg{
-            background-image: url("resp.png");
+            background-image: url("mobg.png");
         }
         .outercircle{
         background-color: white;
@@ -188,7 +173,7 @@ border-radius: 20px;
         position: absolute;
         left: 80%;
         padding: 10px; 
-        top: -50px;
+        top: -100px;
     }
     .innercicle{
         background-color: red;
@@ -207,28 +192,22 @@ border-radius: 20px;
         font-weight: light;
         padding-top: 10px;
         text-align: center;
-    }  .popStar{
+    } 
+     .popStar{
         width: 95%;
         border-radius: 20px;
     }
+    
     .forMob{
         width : 100%;
-        background: white;
         padding: 5px;
-    }
-    .spread{
-        margin-left: 4px;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        width: fit-content;
     }
     .lisinfo{
         background-color: rgba(224, 221, 221, 0.205);
         color: rgba(82, 82, 82, 0.726);
     }
     .mprog{
-        background-color: rgb(112, 166, 209);
+        background-color: #FFAC71;
         border-radius: 15px;
         padding : 20px 20px;
     }
@@ -262,119 +241,66 @@ border-radius: 20px;
         <div class="w-72 lg:w-96 -mt-20 lg:-mt-28 mx-auto mb-5">
         <img src="ring.png" class="h-[8vh] lg:h-[16vh] ml-auto" />
         </div>
-        <div class="flex w-full px-2 lg:px-10 text-[10px] h-8 lg:mt-2">
-            <div class="flex gap-2 w-56">
+        <div class="flex w-full px-2 lg:gap-3 lg:px-10 text-[10px] h-8 lg:mt-2">
+            <div class="flex gap-2 w-56 lg:w-40">
                 <img src="le.png" class="h-5 lg:h-fit" />
                 <span>Système avancé de 
                     double caméra</span>
             </div> 
-            <div class="flex gap-2 w-60">
-                <img src="line.png" class="h-5 lg:h-fit"  />
+            <div class="flex gap-2 w-60 lg:w-36 ">
+                <img src="line.png" class="h-5 lg:h-8"  />
                 <span>Processeur A16 Bionic 
                     avec GPU à 5 cœurs</span>
             </div>
              <div class="flex gap-2 w-16">
-                <img src="mid.png" class="h-5 lg:h-fit"  />
+                <img src="mid.png" class="h-5 lg:h-8"  />
                 <span>Dynamic Island</span>
             </div>  
         </div>
        </div>
         <img src="thearr.png" class="absolute bottom-56 left-[1%] lg:bottom-14 lg:left-[26%]"/>
-        <img src="jec.png" class="h-[8vh]  anibut craq w-[60%]  lg:h-[10vh] lg:w-fit mx-auto hover:pointer start" />
+        <img src="myc.png" class="h-[8vh]  anibut craq w-[60%]  lg:h-[10vh] lg:w-fit mx-auto hover:pointer start" />
         </div>
         <div class="popStar hidden">
-            <img src="fd.png" class="h-[5vh] lg:h-[10vh] w-fit mx-auto" />
-            <div class="infoSec relative flex bg-white rounded-xl mt-6">
+            <img src="kis.png" class="h-[5vh] w-fit mx-auto hidden lg:block" />
+            <img src="Offre Exclusive po.png" class="h-[5vh] w-fit mr-auto lg:hidden" />
+            <img src="ap.png" class="h-[2vh] lg:h-[3vh] my-2 w-fit mr-auto  lg:mx-auto" />
+            <div class="infoSec relative flex  rounded-xl mt-6">
                 <div class="outercircle block lg:hidden">
                     <div class="innercicle">
                         <div class="inn">
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="check.png"  class="absolute check hidden rounded-full border-4 border-white
-                     -top-6 right-10 h-16 bg-white">
-                </div>
+                
                 <div class="infoSecL hidden lg:block">
-                  <div class="topsec">
-                        <div class="moveback">
-                            <img src="angle.png" />
+                    <div class="leftInfo h-full w-full relative">
+                   <div class="bg-white w-[90vw] lg:w-[35vw] rounded-xl pb-4 lg:p-2 my-2 mx-auto">
+                    <div class="w-72 lg:w-96 -mb-20 lg:-mb-28 mx-auto">
+                        <img src="ring.png" class="h-[8vh] lg:h-[16vh] ml-auto mr-10 myring" />
                         </div>
-                        <div>
-                            <img src="progress bar.png" class="pro"/>
-                            <img src="ba2.png" class="pro2 hidden w-[400px]"/>
-                            <img src="bard.png" class="pro3 hidden w-[400px]"/>
+                    <img src="ph.png " class=" h-[40vh] lg:h-[50vh] w-fit mx-auto" />
+              
+                    <div class="flex w-full px-2 lg:gap-3 lg:px-4 text-[10px] h-8 lg:mt-2">
+                        <div class="flex gap-2 w-56 lg:w-40">
+                            <img src="le.png" class="h-5 lg:h-fit" />
+                            <span>Système avancé de 
+                                double caméra</span>
+                        </div> 
+                        <div class="flex gap-2 w-60 lg:w-36 ">
+                            <img src="line.png" class="h-5 lg:h-8"  />
+                            <span>Processeur A16 Bionic 
+                                avec GPU à 5 cœurs</span>
                         </div>
-                  </div>
-                  <div  class="flex">
-                   <div class="all">
-                    <div class="imgList">
-                        <img src="mob.png" class="se"/>
-                    </div>
-                    <div class="cop">
-                        <img src="cou.png"/>
-                    </div>
-                    <div class="spread">
-                        <img src="de.png"/>
-                        <img src="de2.png"/>
-                        <img src="de3.png"/>
+                         <div class="flex gap-2 w-16">
+                            <img src="mid.png" class="h-5 lg:h-8"  />
+                            <span>Dynamic Island</span>
+                        </div>  
                     </div>
                    </div>
-                   <div class="pl-4">
-                    <div class="text-xs text-gray-400 font-light my-4">
-                        l'offre de Pour svg SAMSUNG GALAXY S24
                     </div>
-                    <img src="sam.png" />
-                    <div class="flex gap-1 h-fit my-3">
-                        <img src="star.png" class="h-3 " />
-                         <span class="text-[12px] text-gray-400 font-light">(1123 avis)</span>
-                    </div>
-                    <div class="text-sm list">
-                        Principal characteristics
-                        <ul class="list-disc ml-5">
-                            <li>
-                                Functionalities de lA
-                            </li>
-                            <li>Renforcé par de l'aluminium de qualité spatiale</li>
-                            <li>
-                                Une batterie plus intelligente pour toute 
-       la journée   </li>
-       <li> Choisissez votre espace de stockage</li>
-                        </ul>
-                        <span class="italic font-semibold">Choisissez votre espace de stockage</span>
-                        <div class="flex  gap-3 mt-2">
-                            <span class="border p-3 rounded-xl">256 GB</span>
-                            <span class="border p-3 rounded-xl">512 GB</span>
-                        </div>
-                        <div class="flex mt-4">
-                            <div class="flex flex-col">
-                                <input type="radio" class="mx-auto" />
-                              <span class="pl-4">  violeto Cobalto</span>
-                            </div>
-                            <div class="flex flex-col">
-                                <input type="radio" />
-                                <span class="pl-4"> Amarelo Amber</span>
-                            </div>
-                            <div class="flex flex-col">
-                                <input type="radio" />
-                                <span class="pl-4">   Preto Onix</span>
-                            </div>
-                            <div class="flex flex-col">
-                                <input type="radio" />
-                                <span class="pl-4"> Cinzento Marmoire </span>
-                            </div>
-                        </div>
-                    </div>
-                   </div>
-                   <div class="success hidden relative pt-6 ">
-                    <img src="phone.png" class="nine" />
-                    <img src="Confirmé.png" class="h-10 mx-auto" />
-                    <img src="Frame.png" class="absolute top-3 w-90" />
-                    <div class="font-semibold italic mx-auto w-fit text-sm">Merci de nous avoir choisis !</div>
-                  </div>
-                  </div>
                 </div>
-                <div class="infoSecDetails relative hidden lg:flex">
+                <div class="infoSecDetails relative bg-white hidden lg:flex">
                     <div class="outercircle hidden lg:block">
                         <div class="innercicle">
                             <div class="inn">
@@ -387,7 +313,7 @@ border-radius: 20px;
                           </svg>
                     </div>
                    <div class="send">
-                    <div class="my-3 mx-auto w-fit">
+                    <div class="my-3 ml-3 font-semibold italic w-fit">
                         Remplissez vos coordonneés
                     </div>
                     <form class="" onsubmit="return handleSubmit(event)">
@@ -407,12 +333,12 @@ border-radius: 20px;
                         <input  type="text" placeholder="Ville" class="outline-none dVim"/>
                         <input  type="text" placeholder="Code Portal" class="outline-none code dPort" />
                         </div>
-                        <div class="flex justify-center align-center text-sm"  >
+                        <div class="flex w-fit  gap-2 mx-auto  text-sm"  >
                         <input  type="checkbox"  required/><div class="mt-4">
                             jai plus de 18 ans et j'accepte les conditions</div>
                         </div>
                         <button type="submit" class="forFix">
-                            <img src="send.png" />
+                            <img src="jec.png" />
                         </button>
                     </form>
                    </div>
@@ -440,47 +366,35 @@ border-radius: 20px;
                 </div>
                   </div>
                  <div class="forMob lg:hidden rounded-xl pt-2">
-                    <div class="topsec">
-                        <div class="mobeM">
-                            <img src="angle.png" />
+                 
+                <div class="tobe bg-white pb-4 rounded-xl pt-2 " >
+                    <div class="w-fit mx-auto">
+                        <div class="w-72 lg:w-96 -mb-20 mx-auto">
+                            <img src="ring.png" class="h-[8vh] lg:h-[16vh] ml-auto mr-10 myring" />
+                            </div>
+                        <img src="ph.png" alt="" class="mobeM w-[30vh] moveback">
+                  
+                    </div>
+
+                          
+                    <div class="flex w-full px-2 w-fit justify-around  text-[10px] h-8 ">
+                        <div class="flex gap-2 w-24">
+                            <img src="le.png" class="h-5 lg:h-fit" />
+                            <span>Système avancé de 
+                                double caméra</span>
+                        </div> 
+                        <div class="flex gap-2 w-24">
+                            <img src="line.png" class="h-5 lg:h-8"  />
+                            <span>Processeur A16 Bionic 
+                                avec GPU à 5 cœurs</span>
                         </div>
-                        <div>
-                            <img src="progress bar.png" class="pro w-[280px] mr-14 rounded-r-xl"/>
-                            <img src="ba2.png" class="pro2 w-[280px] mr-14 rounded-r-xl hidden"/>
-                            <img src="bard.png" class="pro3 w-[280px] mr-14 rounded-r-xl hidden"/>
-                        </div>
-                  </div>
-                  <div class="text-xs text-gray-400 font-light my-4">
-                    l'offre de Pour svg SAMSUNG GALAXY S24
-                </div>
-                <img src="sam.png"  class="h-2" />
-                <div class="flex gap-1 h-fit my-3">
-                    <img src="star.png" class="h-3 " />
-                     <span class="text-[12px] text-gray-400 font-light">(1123 avis)</span>
-                </div>
-                <div class="flex tobe">
-                    <div>
-                        <img src="mob.png" alt="">
-                    </div>
-                    <div class="spread">
-                        <img src="de.png"/>
-                        <img src="de2.png"/>
-                        <img src="de3.png"/>
+                         <div class="flex gap-2 w-16">
+                            <img src="mid.png" class="h-5 lg:h-8"  />
+                            <span>Dynamic <br> Island</span>
+                        </div>  
                     </div>
                 </div>
-                <div class="infos text-sm mt-1">
-                    <div class="w-full flex justify-between bg-white  border-b lisinfo rounded-lg p-1 align-center">
-                        <span>  Principales caractéristiques</span> 
-                        <img src="down.png" class="h-1 w-2 mt-3"   />
-                      </div>   <div class="w-full flex justify-between border-b bg-white lisinfo rounded-lg p-1 align-center">
-                        <span> Choisissez votre espace de stockage</span> 
-                        <img src="down.png" class="h-1 w-2 mt-3"   />
-                      </div>   <div class="w-full flex justify-between border-b bg-white lisinfo rounded-lg p-1 align-center">
-                      <span>  Couleurs disponibles</span> 
-                      <img src="down.png" class="h-1 w-2 mt-3"   />
-                    </div>
-                </div>
-                <form class="mb-4 formatiom">
+                <form class="my-1 shadow-md  formatiom bg-white p-2 rounded-xl">
                     <span class="italic font-semibold text-sm">Remplissez vos coordonneés</span>
                     <span class="hidden mErr  text-red-600 text-xs italic font-bold ">Merci de remplir ce champ obligatoire</span>
                     <div class="flex mInp">
@@ -494,7 +408,7 @@ border-radius: 20px;
                         </div>
                     </div>
                 </form>
-                <form  onsubmit="return handlePayM(event) " class="myPay hidden">
+                <form  onsubmit="return handlePayM(event) " class="myPay hidden  bg-white p-2 rounded-xl">
                     <input  type="text" placeholder="1234 1234 1234 1234" class="outline-none numCard"
                      maxlength="19" oninput="formatCardNumber(event)"  required/>
                     <div class="split relative mt-1">
@@ -512,9 +426,12 @@ border-radius: 20px;
                         <img src="pay.png" />
                     </button>
                 </form>
-                <div class="mbSuc hidden  relative">
-                    <img src="phone.png"/>
-                    <img src="Frame.png" class="absolute top-0" />  
+                <div class="mbSuc hidden bg-white w-[80vw] p-3 rounded-xl relative">
+                    <img src="ph.png"/>
+                    <img src="goo.png" class="absolute top-10 h-16 right-[16%]">
+                    <img src="love.png" class="absolute bottom-[38%] h-14 right-[16%]">
+                    <img src="love.png" class="absolute top-[38%] h-14 left-[16%]">
+                    <img src="goo.png" class="absolute bottom-[18%] h-14 left-[16%]">
                     <img src="Confirmé.png" class="h-10 mx-auto" />
                     <div class="font-semibold italic mx-auto w-fit text-sm">Merci de nous avoir choisis !</div>
                  
@@ -522,6 +439,21 @@ border-radius: 20px;
                 </div>
 
             </div>
+            <div class="hidden lg:block">
+                <img src="lev.png" class="pro w-[400px] mx-auto mt-5"/>
+                <img src="secl.png" class="pro2 w-[400px] mx-auto mt-5 hidden"/>
+            </div>
+            <div class="success bg-white w-[50vw] rounded-xl mx-auto relative hidden" >
+                <img src="ph.png" class="h-[50vh] mx-auto"/>
+                <img src="goo.png" class="absolute top-10 h-20 right-[25%]">
+                <img src="love.png" class="absolute bottom-[18%] h-20 right-[25%]">
+                <img src="love.png" class="absolute top-10 h-20 left-[22%]">
+                <img src="goo.png" class="absolute bottom-[18%] h-20 left-[22%]">
+                <img src="conf.png" class="h-20 mx-auto">
+                <div class="italic font-semibold mx-auto w-fit">Merci de nous avoir choisis !</div>
+            </div>
+            <div class="hidden lg:block">
+                <img src="fin.png" class="pro3 w-[400px] mx-auto mt-5 hidden"/></div>
         </div>
     </div>
 <div class="loading hidden text-white">
@@ -541,12 +473,10 @@ border-radius: 20px;
     const pro2 = document.querySelector(".pro2")
     const pro3 = document.querySelector(".pro3")
     const popStar = document.querySelector(".popStar")
-    const all = document.querySelector(".all")
     const success = document.querySelector(".success")
     const infoSecDetails = document.querySelector(".infoSecDetails")
     const infoSec = document.querySelector(".infoSec")
     const list = document.querySelector(".list")
-    const check = document.querySelector(".check")
     const loading = document.querySelector(".loading")
     const close = document.querySelector(".close")
     const code = document.querySelector(".code")
@@ -564,7 +494,6 @@ border-radius: 20px;
     const outercircle= document.querySelector(".outercircle")
     const tobe= document.querySelector(".tobe")
     const mbSuc= document.querySelector(".mbSuc")
-    const infos= document.querySelector(".infos")
     const forFix= document.querySelector(".forFix")
     const moveback= document.querySelector(".moveback")
     const pdesk= document.querySelector(".pdesk")
@@ -580,6 +509,8 @@ border-radius: 20px;
     const Serror= document.querySelector(".Serror")
     const Adrerror= document.querySelector(".Adrerror")
     const Admerror= document.querySelector(".Admerror")
+    const leftInfo = document.querySelector(".leftInfo")
+    const myring = document.querySelector(".myring")
 
 
     let clPaym = false;
@@ -719,7 +650,9 @@ border-radius: 20px;
     start.addEventListener("click", ()=>{
         bg.style.display ="none"
         popStar.style.display = "block"
+        popStar.style.paddingTop = "50px"
         family.focus()
+        myring.style.zIndex="999"
         countdown()
     })
 
@@ -736,13 +669,10 @@ border-radius: 20px;
     infoSec.style.width = "65vw"
     infoSec.style.marginTop = "70px"
     infoSecDetails.style.display = "flex"
-            list.style.display = "block" 
             infoSec.style.margin = "0px auto" 
-             all.style.display = "block"
         pro2.style.display ="block"
         pro3.style.display = "none"
         success.style.display = "none"
-        check.style.display = "none"
         moveCount = 1;
         }
     })
@@ -804,16 +734,10 @@ if(dFamile.value.length > 2 && dadm.value.length > 2
 function myFunction() {
  
     loading.style.display = "none"
-    infoSec.style.width = "fit-content"
-    infoSec.style.marginTop = "70px"
-    infoSecDetails.style.display = "none"
-            list.style.display = "none" 
-            infoSec.style.margin = "0px auto" 
-             all.style.display = "none"
+    infoSec.style.display = "none"
         pro2.style.display ="none"
         pro3.style.display = "block"
         success.style.display = "block"
-        check.style.display = "block"
         moveCount = 2;
 }
 function myFunctionM() {
@@ -822,10 +746,8 @@ function myFunctionM() {
  infoSec.style.marginTop = "70px"
      pro2.style.display ="none"
      pro3.style.display = "block"
-     check.style.display = "block"
      outercircle.style.display = "none"
      myPay.style.display = "none"
-     infos.style.display = "none"
      tobe.style.display = "none"
      mbSuc.style.display = "block"
      moveCount = 12;
