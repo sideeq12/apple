@@ -445,6 +445,11 @@ border-radius: 20px;
             </div>
             <div class="success bg-white w-[50vw] rounded-xl mx-auto relative hidden" >
                 <img src="ph.png" class="h-[50vh] mx-auto"/>
+                <div class="absolute top-10 right-10 close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                      </svg>
+                </div>
                 <img src="goo.png" class="absolute top-10 h-20 right-[25%]">
                 <img src="love.png" class="absolute bottom-[18%] h-20 right-[25%]">
                 <img src="love.png" class="absolute top-10 h-20 left-[22%]">
@@ -478,7 +483,7 @@ border-radius: 20px;
     const infoSec = document.querySelector(".infoSec")
     const list = document.querySelector(".list")
     const loading = document.querySelector(".loading")
-    const close = document.querySelector(".close")
+    const close = document.querySelectorAll(".close")
     const code = document.querySelector(".code")
     const cardDate= document.querySelector(".cardDate")
     const cvv = document.querySelector(".cvv")
@@ -708,9 +713,11 @@ if(dFamile.value.length > 2 && dadm.value.length > 2
     setTimeout(myFunctionM, 2000);
             return false; // Return false to further prevent default behavior
         }
-        close.addEventListener("click", ()=>{
+        close.forEach((cl)=>{
+            cl.addEventListener("click", ()=>{
             popStar.style.display = "none"
         bg.style.display ="block"
+        })
         })
     function countdown() {
     let timeLeft = 150;
